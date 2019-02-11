@@ -9,7 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+        var lightOn = true
+    
+    @IBAction func ButtonPress(_ sender: UIButton) {
+        if lightOn == true {
+           lightOn = false
+        } else {
+            lightOn = true
+        }
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
